@@ -1,13 +1,12 @@
-package com.bezkoder.spring.data.mongodb;
+package de.akad.spring.mongodb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootDataMongodbApplication {
+public class AkadSpringBootMongodbApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootDataMongodbApplication.class, args);
+		SpringApplication.run(AkadSpringBootMongodbApplication.class, args);
 	}
-
 }

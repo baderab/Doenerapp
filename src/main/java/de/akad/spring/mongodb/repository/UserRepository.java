@@ -1,12 +1,12 @@
-package com.bezkoder.spring.data.mongodb.repository;
+package de.akad.spring.mongodb.repository;
 
 import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.bezkoder.spring.data.mongodb.model.Tutorial;
+import de.akad.spring.mongodb.model.UserModel;
 
-public interface TutorialRepository extends MongoRepository<Tutorial, String> {
-  List<Tutorial> findByPublished(boolean published);
-  List<Tutorial> findByTitleContaining(String title);
+public interface UserRepository extends MongoRepository<UserModel, String> {
+  List<UserModel> findByPublished(boolean published);
+  List<UserModel> findByTitleContaining(String title);
 }
